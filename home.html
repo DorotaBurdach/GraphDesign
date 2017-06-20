@@ -13,219 +13,220 @@
 <body>
 	<div class="div_margin" id="red_menu">
 		<ul id="red_left_menu">
-			<li>
-				<a href="">Logo Wallscope</a>
+			<li><img src="img/logo.png" id="img_logo" alt="Wallscope Logo"> </li>
+			<li><a href="home.html" class="red_text">Wallscope</a>
 			</li>
 		</ul>
-		<ul id="red_right_menu">
-			<li>
-				<a href=""><i class="fa  fa-question-circle" id="last_icon"></i> Help</a>
-			</li>
-			<li class="devide"><span>&#x7c;</span></li>
-			<li>
-				<a href="demo.html"><i class="fa fa-play" aria-hidden="true"></i> Start Project</a>
-			</li>
+		<ul id="">
+			<div class="wrap"style="float:right">
+				<nav>
+				  <ul class="primary">
+					<li>
+					  <a href="#new_project" style="border-right:none;" ><i class="fa fa-play" aria-hidden="true"></i> Start Project</a>
+						<!--MODAL-->
+								<div id="new_project" class="modal-window">
+									  <div class="form_div">
+										<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+										<h3>New Project</h3>
+										<form id="edit_project_title" method="post" action="">
+											<label for="title"><h5>Project Title</h5></label>
+											<textarea maxlength="140" name="message" id="title" placeholder="Enter project title"></textarea>
+											<label for="desc"><h5>Project Description</h5></label>
+											<textarea name="message" id="desc" placeholder="Enter description"></textarea>
+											<a href="#modal-close" class="button" title="Close" >Cancel</a>
+											
+											<a href="demo.html" class="button_start_project_home" title="Close" >Create</a>
+											<!--<input class="btn submit" type="submit" value="Create"/>-->
+										</form>
+										<br><br>
+									</div>
+								</div>
+								<!--END MODAL-->	
+					</li>
+					
+				  </ul>
+				</nav>
+			</div>
 		</ul>
 	</div>
-	
 	<div class="row" id="middle_content_home" >	
 		<div class="db-lg-4">
 			<h3>How to use the query</h3> 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-			<p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-			<p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-			<p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
+			<p>
+				1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
+			<p>
+				2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
+			<p>
+				3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
 			<div class="videoWrapper">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-</div>
+				<iframe width="auto" height="auto" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
-		<div class="db-lg-7-special" id="content">
-		
+		<div class="db-lg-7" id="content">
 			<div class="db-lg-1-special">
 				&nbsp;
 			</div>	
-			<div class="db-lg-11" id="graphs_output">						
-				<div class="tab">
-				  <button class="tablinks" onclick="openGraph(event, 'Table')">Table </button>
-				  <button class="tablinks" onclick="openGraph(event, 'Bubble')">Bubble chart &nbsp;<span>&#x7c;</span>&nbsp;&nbsp;
-				  <!--MODAL-->
-					<a class="btn color" href="#delete"><i class="fa fa-times-circle" aria-hidden="true" ></i></a>
-					<div id="delete" class="modal-window">
-						<div class="sure">
-							<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-							<h3>Are you sure you want to delete?</h3>
-							<br>
-							<a href="#modal-close" class="button no" title="Close" class="modal-close">No</a>
-							<!--
-							any form here?
-							-->
-							<input class="btn yes" type="submit" value="Yes"/>
-							<br><br>
-						</div>
-					</div>
-					<!--MODAL END-->	
+		<div class="db-lg-12 graphs_output_home" id="graphs_output">	
+			<h3 style="margin-top:-25px; margin-bottom:20px;">Available Outputs</h3> 	
+			<div class="tab tab_home">
+				  <button class="tablinks " onclick="openGraph(event, 'Table')">Table</button>
+				  <!--=========================================================================== 
+					
+					Tab Buttton -> single element
+				  ===============================================================================-->
+				  <button class="tablinks" onclick="openGraph(event, 'Bubble')">Bubble chart 
 				  </button>
-				  <button class="tablinks" onclick="openGraph(event, 'Area')">Area chart &nbsp;<span>&#x7c;</span>&nbsp;&nbsp;
-				  <!--MODAL-->
-					<a class="btn color" href="#delete"><i class="fa fa-times-circle" aria-hidden="true" ></i></a>
-					<div id="delete" class="modal-window">
-						<div class="sure">
-							<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-							<h3>Are you sure you want to delete?</h3>
-							<br>
-							<a href="#modal-close" class="button no" title="Close" class="modal-close">No</a>
-							<!--
-							any form here?
-							-->
-							<input class="btn yes" type="submit" value="Yes"/>
-							<br><br>
-						</div>
-					</div>
-					<!--MODAL END-->	
+				  <!--=========================================================================== 
+					//////////////////////////////////////////   END  Tab Buttton
+				  ===============================================================================-->
+				  <button class="tablinks" onclick="openGraph(event,'Area')">Area chart 
 				  </button>
-				  <button class="tablinks" onclick="openGraph(event, 'Error')">Map &nbsp;<span>&#x7c;</span>&nbsp;&nbsp;
-				  <!--MODAL-->
-					<a class="btn color" href="#delete"><i class="fa fa-times-circle" aria-hidden="true" ></i></a>
-					<div id="delete" class="modal-window">
-						<div class="sure">
-							<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-							<h3>Are you sure you want to delete?</h3>
-							<br>
-							<a href="#modal-close" class="button no" title="Close" class="modal-close">No</a>
-							<!--
-							any form here?
-							-->
-							<input class="btn yes" type="submit" value="Yes"/>
-							<br><br>
-						</div>
-					</div>
-					<!--MODAL END-->	
+				  <button class="tablinks" onclick="openGraph(event, 'Error')">Map 
 				  </button>
-				</div>
-				<hr class="blue_hr">
-				<div id="Table" class="tabcontent">
-					<table style="width:100%">
-						<tr>
-							<th style="border:none;">
-								<h3>Table</h3>
-							</th>
-							<th style="border:none;">
-								<b>Rows: 4567</b>
-							</th>
-							<th style="border:none;">
-								Show rows:&nbsp;
-								<select>
-								  <option value="10">10</option>
-								  <option value="20">20</option>
-								  <option value="30">30</option>
-								  <option value="40">40</option>
-								  <option value="50">50</option>
+				  
+				 
+				  	
+
+				
+			</div>
+			<hr class="blue_hr">
+			<div id="Table" class="tabcontent">
+				<table id="table_output_title">
+					<tr>
+						<th style="border:none;">
+							<p>Table</p>
+						</th>
+						<th style="border:none;">
+							<p><b>Rows: 4567</b></p>
+						</th>
+						<th style="border:none;">
+							<span style="font-size:14px">Show rows:&nbsp;</span>
+							<select>
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
 								</select>
-							</th> 
-							<th style="border:none;">
-								<a href=""><< &nbsp;&nbsp;</a> 
-								<a href="">1</a> 
-								- 
-								<a href="" class="active_page">2</a>
-								- 
-								<a href="">3</a>
-								- 
-								<a href="">4</a>
-								- 
-								<a href="">5</a>
-								<a href="" >&nbsp;&nbsp; >></a> 
-							</th>
-						</tr>
-					</table>
-				  	<table id="table">
-					  <tr>
+						</th> 
+						<th style="border:none;">
+							<a href="" ><< &nbsp;&nbsp;</a> 
+							<a href="" >1</a> 
+							- 
+							<a href="" class="active_page">2</a>
+							- 
+							<a href="">3</a>
+							- 
+							<a href="">4</a>
+							- 
+							<a href="">5</a>
+							<a href="" >&nbsp;&nbsp; >></a> 
+						</th>
+					</tr>
+				</table>
+				<table id="table_output">
+					<tr>
 						<th>
-							 <nav class="column_nav"> 
+							<nav class="column_nav"> 
 								<ul>
-								   <span style="color:black;">Company</span>
+								   <span class="column_name">Company</span>
 									<li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<!-- First Tier Drop Down -->
-									<ul>
-										<li><a href="#">Show path <i class="fa fa-caret-right" aria-hidden="true" style="float:right; margin-top:8px;"></i></a>
-										<!-- Second Tier Drop Down -->
 										<ul>
-											 <li><a href="#">Column name</a>
-												<!-- Third Tier Drop Down -->
-												<ul> 
-													<li><a href="#">Other Stuff</a></li>
-												</ul>
+											<li><a href="#">Show path <i class="fa fa-caret-right" aria-hidden="true" style="float:right; margin-top:8px;"></i></a>
+											<!-- Second Tier Drop Down -->
+											<ul>
+												 <li><a href="#">Column name</a>
+													<!-- Third Tier Drop Down -->
+													<ul> 
+														<li><a href="#">Other Stuff</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Path</a></li>
+												<li><a href="#">Sub Path1</a></li>  
+											</ul>
 											</li>
-											<li><a href="#">Path</a></li>
-											<li><a href="#">Sub Path1</a></li>  
+											 <li><a href="#">Delete Column <i class="fa fa-times" aria-hidden="true" style="float:right; margin-top:8px;"></i></a></li>
 										</ul>
-										</li>
-										 <li><a href="#">Delete Column <i class="fa fa-times" aria-hidden="true" style="float:right; margin-top:8px;"></i></a></li>
-									</ul>
 									</li>
 								</ul>
 							</nav>
 						</th>
 						<th>Contact</th>
 						<th>Country</th>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Alfreds Futterkiste</td>
 						<td>Maria Anders</td>
 						<td>Germany</td>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Centro comercial Moctezuma</td>
 						<td>Francisco Chang</td>
 						<td>Mexico</td>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Ernst Handel</td>
 						<td>Roland Mendel</td>
 						<td>Austria</td>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Island Trading</td>
 						<td>Helen Bennett</td>
 						<td>UK</td>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Laughing Bacchus Winecellars</td>
 						<td>Yoshi Tannamuri</td>
 						<td>Canada</td>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<td>Magazzini Alimentari Riuniti</td>
 						<td>Giovanni Rovelli</td>
 						<td>Italy</td>
-					  </tr>
-					</table>
-					<div class="tab_export">
-						<ul style=" list-style-type: none;  display: inline-block;">
-							<li>	
-								<p>Export: </p>
-							</li>
-							<li>
-								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
-							</li>
-						</ul>
-					</div>
+					</tr>
+				</table>
+				<div class="tab_export">
+					<ul style=" list-style-type: none;  display: inline-block;">
+						<li>	
+							<p>Export: </p>
+						</li>
+						<li>
+							<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
+						</li>
+					</ul>
 				</div>
-				<div id="Bubble" class="tabcontent">
-					<h3>Bubble chart</h3>
-					<p>Here comes the bubble chart.</p> 
-					<img src=" http://help.plot.ly/static/images/bubble-chart/log-bubble-chart.png" >
-					<div class="tab_export">						
-						<ul style=" list-style-type: none;  display: inline-block;">
-							<li>	
-								<p>Export: </p>
-							</li>
-							<li>
-								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
-							</li>
-						</ul>
-					</div>
+			</div>
+				
+				<!--=========================================================================== 
+					Tab Output  -> single element
+				===============================================================================-->
+				  
+			<div id="Bubble" class="tabcontent">
+				<h3>Bubble chart</h3>
+				<p>Here comes the bubble chart.</p> 
+				<img src=" http://help.plot.ly/static/images/bubble-chart/log-bubble-chart.png" >
+				<div class="tab_export">						
+					<ul style=" list-style-type: none;  display: inline-block;">
+						<li>	
+							<p>Export: </p>
+						</li>
+						<li>
+							<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
+						</li>
+					</ul>
 				</div>
+			</div>
+				
+				<!--=========================================================================== 
+					//////////////////////////////////////////////  END   Tab Output
+				===============================================================================-->
 				<div id="Area" class="tabcontent">
 				  <h3>Area chart</h3>
 				  <p>Here comes the area chart.</p>
@@ -242,28 +243,13 @@
 						</ul>
 					</div>
 				</div>
-				<div id="Error" class="tabcontent error">
+				<div id="Error" class="tabcontent ">
 					<br><br><br>
-					<table style="width:80%; margin-left:10%; border: 3px solid #E5565B ; background-color:white">					  
-						<tr style="">
-							<th style="border:none; text-align:center;">
-								<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-							</th>	
-							<th style="border:none;">
-								<h3>Error</h3>
-								<p>Sorry this output can't be perform.
-								Please check:<br>
-								- type of data<br>
-								- number of data<br>
-								- more...</p>
-							</th>
-						</tr>
-						 
-					</table>
-					<br><br><br>
+					
+				
 				</div>
 				<br><br><br><br><br>
-			</div>					
+			</div>				
 		</div>
 	</div>
 	
@@ -274,7 +260,7 @@
 	</div>
 	
 	<div class="row db-lg-4" style="text-align:center; margin-top:100px;">
-	<a href="" class="button_start" title="Close" >Start your query >></a>
+	<a href="#new_project" class="button_start" title="Close" >Start your project >></a>
 	</div>
 	
 	<div class="row db-lg-4">
@@ -286,6 +272,9 @@
 	
 	<footer class="footer db-lg-12" id="footer" >
 		<div class="row">
+		<div class="db-lg-2" >
+			&nbsp;
+		</div>
 			<div class="db-lg-3" id="footer-first">
 				<a href="#"><p>ABOUT</p></a>
 				<a href="#"><p>CAREERS</p></a>
@@ -301,22 +290,7 @@
 				<p>INTERNATIONAL: +44776 994 4513</p>
 				<p>EMAIL: INFO@WALLSCOPE.CO.UK</p>
 			</div>
-			<div class="db-lg-3" id="footer-fourth">
-				<div class="row large-12 medium-12" id="social">
-					<a href=""><div class="large-2 medium-2 round_div columns soc_ico">
-						<i class="fi-social-facebook size-14"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-social-instagram size-14 soc_ico"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-social-twitter size-14 soc_ico"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-at-sign size-14 soc_ico"></i>
-					</div></a>
-				</div>
-			</div>   
+		  
 		</div>
 		<div class="db-lg-12" id="footer-last">
 			<p>
@@ -329,31 +303,7 @@
 		</div>
 	</footer><!-- end footer-->
 	
-	
-	
 
-	<!--<div style="max-width:180px; background-color:grey;">
-	<form action="">
-		<input type="search" name="googlesearch" placeholder="Search">
-		<br>
-		<input type="submit" style="float:right">
-	</form>
-	<ul>
-		<li>
-			<a href="">subject 1</a>
-		</li>
-		<li>
-			<a href="">subject 2</a>
-		</li>
-		<li>
-			<a href="">subject 3</a>
-		</li>
-		<li>
-			<a href="">subject 4</a>
-		</li>
-	</ul>
-	
-	</div>-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 <script>
@@ -379,56 +329,6 @@
 
 
 
-
-//query
-
-(function ($) {
-  $.fn.liHarmonica = function (params) {
-    var p = $.extend({
-      currentClass: 'cur', 
-      onlyOne: true, 
-    
-      speed: 500 
-    }, params);
-    return this.each(function () {
-      var
-      el = $(this).addClass('harmonica'),
-        linkItem = $('ul', el).prev('a');
-      el.children(':last').addClass('last');
-      $('ul', el).each(function () {
-        $(this).children(':last').addClass('last');
-      });
-      $('ul', el).prev('a').addClass('harFull');
-      el.find('.' + p.currentClass).parents('ul').show().prev('a').addClass(p.currentClass).addClass('harOpen');
-      linkItem.on('click', function () {
-        if ($(this).next('ul').is(':hidden')) {
-          $(this).addClass('harOpen');
-        } else {
-          $(this).removeClass('harOpen');
-        }
-        if (p.onlyOne) {
-          $(this).closest('ul').closest('ul').find('ul').not($(this).next('ul')).slideUp(p.speed).prev('a').removeClass('harOpen');
-          $(this).next('ul').slideToggle(p.speed);
-        } else {
-          $(this).next('ul').stop(true).slideToggle(p.speed);
-        }
-        return false;
-      });
-    });
-  };
-})(jQuery);
-
-
-$(function () {
-  $('.anyClass').liHarmonica({
-    onlyOne: false,
-    speed: 500
-  });
-  $('.anyClass2').liHarmonica({
-    onlyOne: true,
-    speed: 400
-  });
-});
 
 </script>
 	

@@ -11,87 +11,71 @@
 	
 </head>
 <body>
-
-
-
-
 <div id="main_content">
 
 <!--=========================================================================== 
 	1 Component Menu
 ===============================================================================-->
-
-
-
-
-
-
 	<div class="div_margin" id="red_menu">
 		<ul id="red_left_menu">
-			<li>
-				<a href="" class="red_text">Logo Wallscope</a>
+			<li><img src="img/logo.png" id="img_logo" alt="Wallscope Logo"> </li>
+			<li><a href="home.html" class="red_text">Wallscope</a>
 			</li>
 		</ul>
 		<ul id="">
-			<div class="wrap"style="float:right">
-
-<nav>
-  <ul class="primary">
-    <li>
-      <a href="#new_project" class="a_menu"><i class="fa fa-file-text"></i>&nbsp;New</a>
-				<!--MODAL-->
-				<div id="new_project" class="modal-window">
-				  	  <div class="form_div">
-						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>New Project</h3>
-						<form id="edit_project_title" method="post" action="">
-							<label for="title"><h5>Project Title</h5></label>
-							<textarea maxlength="140" name="message" id="title" placeholder="Enter project title"></textarea>
-							<label for="desc"><h5>Project Description</h5></label>
-							<textarea name="message" id="desc" placeholder="Enter description"></textarea>
-							<a href="#modal-close" class="button" title="Close" class="modal-close">Cancel</a>
-							<input class="btn" type="submit" value="Edit"/>
-						</form>
-						<br><br>
-					</div>
-				</div>
-				<!--END MODAL-->	
-      
-    </li>
-	<li class="devide">&#x7c;</li>
-	 <li>
-      <a href="" style="border-right:none;"><i class="fa fa-floppy-o"></i>&nbsp;Save</a>
-    </li>
-    <li>
-      <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i>
-</a>
-      <ul class="sub">
-        <li><a href="">Save</a></li>
-        <li><a href="">Save As</a></li>
-      </ul>
-    </li>
-	<li class="devide">&#x7c;</li>
-    <li>
-      <a href=""><i class="fa fa-folder-open"></i>&nbsp;Open</a>
-    </li>
-	<li class="devide">&#x7c;</li>
-    <li>
-      <a href=""><i class="fa fa-share-alt"></i>&nbsp;Share</a>
-      <ul class="sub">
-        <li><a href="">Option 1</a></li>
-        <li><a href="">Option 2</a></li>
-      </ul>  
-    </li>
-	<li class="devide">&#x7c;</li>
-    <li>
-      <a href=""><i class="fa fa-question-circle" id="last_icon"></i>&nbsp;Help</a>
-      
-    </li>
-  </ul>
-</nav>
-</div>
+			<div class="wrap">
+				<nav>
+				  <ul class="primary">
+					<li>
+					  <a href="#new_project"><i class="fa fa-file-text"></i>&nbsp;New</a>
+								<!--MODAL-->
+								<div id="new_project" class="modal-window">
+									  <div class="form_div">
+										<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+										<h3>New Project</h3>
+										<form id="edit_project_title" method="post" action="">
+											<label for="title"><h5>Project Title</h5></label>
+											<textarea maxlength="140" name="message" id="title" placeholder="Enter project title"></textarea>
+											<label for="desc"><h5>Project Description</h5></label>
+											<textarea name="message" id="desc" placeholder="Enter description"></textarea>
+											<a href="#modal-close" class="button" title="Close" >Cancel</a>
+											<input class="btn submit" type="submit" value="Create"/>
+										</form>
+										<br><br>
+									</div>
+								</div>
+								<!--END MODAL-->	
+					</li>
+					<li class="devide">&#x7c;</li>
+					<li>
+					  <a href="" ><i class="fa fa-floppy-o"></i>&nbsp;Save</a>
+					</li>
+					<li>
+					  <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					  <ul class="sub">
+						<li><a href="">Save</a></li>
+						<li><a href="">Save As</a></li>
+					  </ul>
+					</li>
+					<li class="devide">&#x7c;</li>
+					<li>
+					  <a href=""><i class="fa fa-folder-open"></i>&nbsp;Open</a>
+					</li>
+					<li class="devide">&#x7c;</li>
+					<li>
+					  <a href=""><i class="fa fa-share-alt"></i>&nbsp;Share</a>
+					  <ul class="sub">
+						<li><a href="">Option 1</a></li>
+						<li><a href="">Option 2</a></li>
+					  </ul>  
+					</li>
+					
+				  </ul>
+				</nav>
+			</div>
 		</ul>
 	</div>
+	
 <!--==================================================================
 /////////////////////////////////////  END 1 Component Menu 	
 =====================================================================-->	
@@ -110,21 +94,21 @@
 			</div>
 			<div class="db-lg-3">
 				<!--MODAL-->
-				<a class="btn" href="#edit_project_title"><i class="fa fa-pencil edit" aria-hidden="true" ></i></a>
-				<div id="edit_project_title" class="modal-window">
-				  	  <div class="form_div">
+				<a class="btn" href="#edit_project_name"><i class="fa fa-pencil edit" aria-hidden="true" ></i></a>
+				<div id="edit_project_name" class="modal-window">
+					<div class="form_div">
 						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>Project Title</h3>
+						<h3 class="modal_title">Project Title</h3>
 						<form id="edit_project_title" method="post" action="">
 							<textarea maxlength="140" name="message" id="title" placeholder="Current title"></textarea>
 							<a href="#modal-close" class="button" title="Close" class="modal-close">Cancel</a>
-							<input class="btn" type="submit" value="Edit"/>
+							<input class="btn submit" type="submit" value="Edit"/>
 						</form>
 						<br><br>
 					</div>
 				</div>
-				<!--END MODAL-->	
-				<span style="float:right; margin-top:10px; font-size:30px;">&#x7c;</span>
+				<!--END MODAL-->
+				<span class="project_details_devider">&#x7c;</span>
 			</div>
 			</div>
 		</div><!--END Edit Project Name-->
@@ -142,11 +126,11 @@
 				<div id="edit_project_desc" class="modal-window">
 					<div class="form_div">
 						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>Project Description</h3>
+						<h3 class="modal_title">Project Description</h3>
 						<form id="edit_project_title" method="post" action="">
 							<textarea maxlength="140" name="desc" id="title" rows="6" placeholder="Current description"></textarea>
 							<a href="#modal-close" class="button" title="Close" class="modal-close">Cancel</a>
-							<input class="btn" type="submit" value="Edit"/>
+							<input class="btn submit" type="submit" value="Edit"/>
 						</form>
 						<br><br>
 					</div>
@@ -165,23 +149,23 @@
 	3. Component Left Content
 ===============================================================================-->
 	
-		<div class="db-lg-4" id="blue_frame">
-			<!-- Open and Close Link-->
-			<div class="db-lg-12" id="blue_frame_title">
-				<a href="demo2.html" class="red_text"><h4><< Close</h4></a>
-			</div>
+	<div class="db-lg-4" id="blue_frame">
+		<!-- Open and Close Link-->
+		<div class="db-lg-12" id="blue_frame_title">
+			<a href="demo2.html" class="red_text"><h4><< Close</h4></a>
+		</div>
 			
 			
 			<!--=========================================================================== 
 				3.1. Component Data Points
 			===================================================================-->
 			
-			<div class="db-lg-5" id="data_points">
+		<div class="db-lg-5" id="data_points">
 		
 			<h3 class="toolip_title">Data Points</h3>
 			<div class="tooltip"><span class="second_font i_info">i</span>
 			  <span class="tooltiptext">
-				<h3>Data Points</h3>
+				<h4>Data Points</h4>
 				Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in an desirable way.
 			  </span>
 			</div> 
@@ -297,40 +281,39 @@
 					</ul>
 				</li>
 			</ul>
-			</div>
+		</div>
 			
-			<!--==================================================================
+		<!--==================================================================
 			/////////////////////////////////////  END 3.1. Component Data Points 	
-			=====================================================================-->
+		=====================================================================-->
 			
 			<!--===================================================================
 				3.2. Component Filter  
 			===================================================================-->
-			<div class="db-lg-4" id="filters">
-				<h3 class="toolip_title">Filters</h3>
-				<div class="tooltip"><span class="second_font i_info">i</span>
-			  <span class="tooltiptext">
+		<div class="db-lg-4" id="filters">
+			<h3 class="toolip_title">Filters</h3>
+			<div class="tooltip"><span class="second_font i_info">i</span>
+				<span class="tooltiptext">
 				<h4>Filters</h4>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				<br><br>
-				<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+				<a href="" class="link_in_text">Read more</a>
 				<br><br>
 			  </span>
 			</div> 
-				<!--=========================================================================== 
+			<!--=========================================================================== 
 				Filter Button  - single element
-				===============================================================================-->
-				<a href="" class="button" title="Fitler1" >Filter 1</a>
-				<!--=========================================================================== 
-				//////////////////////////////////////////  END   Filter Button
-				===============================================================================-->
-				<a href="" class="button" title="Filter2" >Filter 2</a>
-			</div>
+			===============================================================================-->
+			<a href="" class="button" title="Fitler1" >Filter 1</a>
+			<!--=========================================================================== 
+			//////////////////////////////////////////  END   Filter Button
+			===============================================================================-->
+			<a href="" class="button" title="Filter2" >Filter 2</a>
+		</div>
 			<!--==================================================================
 			 /////////////////////////////////////  END 3.2. Component Filters 	
-			=====================================================================-->
-			
-		</div><!--END blue_frame-->
+			=====================================================================-->	
+	</div><!--END blue_frame-->
 		
 <!--=========================================================================== 
  /////////////////////////////////////  END  3. Component Left Content  
@@ -340,7 +323,7 @@
 	4. Component Right Content
 ===============================================================================-->
 	
-		<div class="db-lg-7-special" id="content">
+	<div class="db-lg-7-special" id="content">
 			<!--=========================================================================== 
 				4.1. Graph Choice
 			===============================================================================-->
@@ -400,10 +383,10 @@
 					<div id="delete" class="modal-window">
 						<div class="sure">
 							<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-							<h3>Are you sure you want to delete?</h3>
+							<h3 >Are you sure you want to delete?</h3>
 							<br>
 							<a href="#modal-close" class="button no" title="Close" class="modal-close">No</a>
-							<input class="btn yes" type="submit" value="Yes"/>
+							<input class="btn yes " type="submit" value="Yes"/>
 							<br><br>
 						</div>
 					</div>
@@ -427,7 +410,7 @@
 					</div>
 					<!--MODAL END-->	
 				  </button>
-				  <a href="#graph_choice" style="float:right" class="button add_graph tablinks" id="add_graph" title="Fitler1" >+ Add</a>
+				  <a href="#graph_choice" class="button add_graph tablinks" id="add_graph" title="Fitler1" >+ Add</a>
 				 
 				  	<!--MODAL-->
 
@@ -435,7 +418,7 @@
 				<div class="graph_choice_content ">
 					<div>	
 						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>Graph Choice</h3>
+						<h3 id="gc_title">Graph Choice</h3>
 						<br>
 					</div>		
 					<div class="db-lg-2">
@@ -445,16 +428,19 @@
 						<table class="graph_table">
 						  <tr>
 							<th class="no_borders">
+							
 								<h3 class="toolip_title">Line charts</h3>
 									<div class="tooltip"><span class="second_font i_info">i</span>
 									  <span class="tooltiptext">
 										<h4>Line charts</h4>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 										<br><br>
-										<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+										<a href="" class="link_in_text">Read more</a>
 										<br><br>
 									  </span>
 									</div> 
+									
+									<img src="https://cdn4.iconfinder.com/data/icons/chart/100/chart_line_up_11-512.png" class="graph_choice_img" >
 							</th>
 						  </tr>
 						  <tr>
@@ -491,10 +477,11 @@
 										<h4>Line charts</h4>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 										<br><br>
-										<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+										<a href="" class="link_in_text">Read more</a>
 										<br><br>
 									  </span>
 									</div> 
+									<img src="http://clipground.com/images/column-chart-clipart-15.jpg"class="graph_choice_img">
 							</th>
 						  </tr>
 						  <tr>
@@ -526,10 +513,11 @@
 										<h4>Line charts</h4>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 										<br><br>
-										<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+										<a href="" class="link_in_text">Read more</a>
 										<br><br>
 									  </span>
 									</div> 
+									<img src="http://icons.veryicon.com/ico/System/Windows%208/Data%20Area%20Chart.ico" class="graph_choice_img">
 							</th>
 						  </tr>
 						  <tr>
@@ -559,10 +547,11 @@
 										<h4>Line charts</h4>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 										<br><br>
-										<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+										<a href="" class="link_in_text">Read more</a>
 										<br><br>
 									  </span>
 									</div> 
+									<img src="https://thumb7.shutterstock.com/display_pic_with_logo/2268416/272467601/stock-vector-vector-business-growing-chart-presentation-icon-with-shadow-272467601.jpg" class="graph_choice_img">
 							</th>
 						  </tr>
 						  <tr>
@@ -596,7 +585,7 @@
 						<h4>Legend</h4>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 						<br><br>
-						<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+						<a href="" class="link_in_text">Read more</a>
 						<br><br>
 					  </span>
 					</div> 
@@ -621,7 +610,7 @@
 								<h4>Line charts</h4>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 								<br><br>
-								<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+								<a href="" class="link_in_text">Read more</a>
 								<br><br>
 							</span>
 						</div> 
@@ -661,7 +650,7 @@
 						<h4>Line charts</h4>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 						<br><br>
-						<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+						<a href="" class="link_in_text">Read more</a>
 						<br><br>
 					  </span>
 					</div> 
@@ -696,7 +685,7 @@
 						<h4>Other charts</h4>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 						<br><br>
-						<a href="" style="text-decoration: undescore; color:blue">Read more</a>
+						<a href="" class="link_in_text">Read more</a>
 						<br><br>
 					  </span>
 					</div> 
@@ -741,14 +730,14 @@
 				<div id="Table" class="tabcontent">
 					<table id="table_output_title">
 						<tr>
-							<th style="border:none;">
+							<th class="no_borders">
 								<p>Table</p>
 							</th>
-							<th style="border:none;">
+							<th class="no_borders">
 								<p><b>Rows: 4567</b></p>
 							</th>
-							<th style="border:none;">
-								<span style="font-size:14px">Show rows:&nbsp;</span>
+							<th class="no_borders">
+								<span>Show rows:&nbsp;</span>
 								<select>
 								  <option value="10">10</option>
 								  <option value="20">20</option>
@@ -757,7 +746,7 @@
 								  <option value="50">50</option>
 								</select>
 							</th> 
-							<th style="border:none;">
+							<th class="no_borders">
 								<a href="" ><< &nbsp;&nbsp;</a> 
 								<a href="" >1</a> 
 								- 
@@ -777,11 +766,11 @@
 						<th>
 							<nav class="column_nav"> 
 								<ul>
-								   <span style="color:black;">Company</span>
+								   <span class="column_name">Company</span>
 									<li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<!-- First Tier Drop Down -->
 										<ul>
-											<li><a href="#">Show path <i class="fa fa-caret-right" aria-hidden="true" style="float:right; margin-top:8px;"></i></a>
+											<li><a href="#">Show path <i class="fa fa-caret-right" aria-hidden="true" ></i></a>
 											<!-- Second Tier Drop Down -->
 											<ul>
 												 <li><a href="#">Column name</a>
@@ -794,7 +783,7 @@
 												<li><a href="#">Sub Path1</a></li>  
 											</ul>
 											</li>
-											 <li><a href="#">Delete Column <i class="fa fa-times" aria-hidden="true" style="float:right; margin-top:8px;"></i></a></li>
+											 <li><a href="#">Delete Column <i class="fa fa-times" aria-hidden="true" ></i></a></li>
 										</ul>
 									</li>
 								</ul>
@@ -835,12 +824,12 @@
 					  </tr>
 					</table>
 					<div class="tab_export">
-						<ul style=" list-style-type: none;  display: inline-block;">
+						<ul class="">
 							<li>	
 								<p>Export: </p>
 							</li>
 							<li>
-								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
+								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" >
 							</li>
 						</ul>
 					</div>
@@ -855,12 +844,12 @@
 					<p>Here comes the bubble chart.</p> 
 					<img src=" http://help.plot.ly/static/images/bubble-chart/log-bubble-chart.png" >
 					<div class="tab_export">						
-						<ul style=" list-style-type: none;  display: inline-block;">
+						<ul>
 							<li>	
 								<p>Export: </p>
 							</li>
 							<li>
-								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
+								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" >
 							</li>
 						</ul>
 					</div>
@@ -875,12 +864,12 @@
 				  <img src=" http://charting.nasdaq.com/ext/charts.dll?2-1-14-0-0-512-03NA000000ACRE-&SF:1|5-BG=FFFFFF-BT=0-WD=635-HT=395-">
 					<div class="tab_export">
 						<hr>
-						<ul style=" list-style-type: none;  display: inline-block;">
+						<ul>
 							<li>
 								<p>Export: </p>
 							</li>
 							<li>
-								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42" style="margin-left:30%">
+								<img src="http://www.zamzar.com/images/filetypes/csv.png" height="42" width="42">
 							</li>
 						</ul>
 					</div>
@@ -896,7 +885,7 @@
 							<th class="no_borders icon_width">
 								<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
 							</th>	
-							<th style="border:none;">
+							<th class="no_borders">
 								
 								<p><span  class="alert_title">Error!&nbsp;</span><br>Sorry this output can't be perform.
 								Please check:<br>
@@ -987,11 +976,11 @@
 			===============================================================================-->
 			
 			
-		</div><!-- END content --><!-- END Component Right Content -->
+	</div><!-- END content --><!-- END Component Right Content -->
 		
 <!--=========================================================================== 
   //////////////////////////////////////////  END 4. Component Right Content
-===============================================================================--><p>
+===============================================================================-->
 
 	</div><!--END middle_content-->	
 	
@@ -1005,6 +994,9 @@
 	
 	<footer class="footer db-lg-12" id="footer" >
 		<div class="row">
+		<div class="db-lg-2" >
+			&nbsp;
+		</div>
 			<div class="db-lg-3" id="footer-first">
 				<a href="#"><p>ABOUT</p></a>
 				<a href="#"><p>CAREERS</p></a>
@@ -1020,22 +1012,7 @@
 				<p>INTERNATIONAL: +44776 994 4513</p>
 				<p>EMAIL: INFO@WALLSCOPE.CO.UK</p>
 			</div>
-			<div class="db-lg-3" id="footer-fourth">
-				<div class="row large-12 medium-12" id="social">
-					<a href=""><div class="large-2 medium-2 round_div columns soc_ico">
-						<i class="fi-social-facebook size-14"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-social-instagram size-14 soc_ico"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-social-twitter size-14 soc_ico"></i>
-					</div></a>
-					<a href=""><div class="large-2 medium-2 round_div columns">
-						<i class="fi-at-sign size-14 soc_ico"></i>
-					</div></a>
-				</div>
-			</div>   
+		  
 		</div>
 		<div class="db-lg-12" id="footer-last">
 			<p>
@@ -1053,28 +1030,7 @@
 	
 	
 
-	<!--<div style="max-width:180px; background-color:grey;">
-	<form action="">
-		<input type="search" name="googlesearch" placeholder="Search">
-		<br>
-		<input type="submit" style="float:right">
-	</form>
-	<ul>
-		<li>
-			<a href="">subject 1</a>
-		</li>
-		<li>
-			<a href="">subject 2</a>
-		</li>
-		<li>
-			<a href="">subject 3</a>
-		</li>
-		<li>
-			<a href="">subject 4</a>
-		</li>
-	</ul>
-	
-	</div>-->
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 <script>

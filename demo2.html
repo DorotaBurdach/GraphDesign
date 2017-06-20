@@ -18,8 +18,8 @@
 
 	<div class="div_margin" id="red_menu">
 		<ul id="red_left_menu">
-			<li>
-				<a href="" class="red_text">Logo Wallscope</a>
+			<li><img src="img/logo.png" id="img_logo" alt="Wallscope Logo"> </li>
+			<li><a href="home.html" class="red_text">Wallscope</a>
 			</li>
 		</ul>
 		<ul id="">
@@ -55,11 +55,7 @@
         <li><a href="">Option 2</a></li>
       </ul>  
     </li>
-	<li class="devide">&#x7c;</li>
-    <li>
-      <a href=""><i class="fa fa-question-circle" id="last_icon"></i>&nbsp;Help</a>
-      
-    </li>
+	
   </ul>
 </nav>
 </div>
@@ -87,11 +83,11 @@
 				<div id="edit_project_title" class="modal-window">
 				  	  <div class="form_div">
 						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>Project Title</h3>
+						<h3 class="modal_title">Project Title</h3>
 						<form id="edit_project_title" method="post" action="">
 							<textarea maxlength="140" name="message" id="title" placeholder="Current title"></textarea>
 							<a href="#modal-close" class="button" title="Close" class="modal-close">Cancel</a>
-							<input class="btn" type="submit" value="Edit"/>
+							<input class="btn submit" type="submit" value="Edit"/>
 						</form>
 						<br><br>
 					</div>
@@ -115,11 +111,11 @@
 				<div id="edit_project_desc" class="modal-window">
 					<div class="form_div">
 						<a href="#modal-close" title="Close" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h3>Project Description</h3>
+						<h3 class="modal_title">Project Description</h3>
 						<form id="edit_project_title" method="post" action="">
 							<textarea maxlength="140" name="desc" id="title" rows="6" placeholder="Current description"></textarea>
 							<a href="#modal-close" class="button" title="Close" class="modal-close">Cancel</a>
-							<input class="btn" type="submit" value="Edit"/>
+							<input class="btn submit" type="submit" value="Edit"/>
 						</form>
 						<br><br>
 					</div>
@@ -856,30 +852,7 @@
  ////////////////////////////////////////////   END  4. Component Footer
 ===============================================================================-->	
 	
-	
 
-	<!--<div style="max-width:180px; background-color:grey;">
-	<form action="">
-		<input type="search" name="googlesearch" placeholder="Search">
-		<br>
-		<input type="submit" style="float:right">
-	</form>
-	<ul>
-		<li>
-			<a href="">subject 1</a>
-		</li>
-		<li>
-			<a href="">subject 2</a>
-		</li>
-		<li>
-			<a href="">subject 3</a>
-		</li>
-		<li>
-			<a href="">subject 4</a>
-		</li>
-	</ul>
-	
-	</div>-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 <script>
@@ -906,55 +879,6 @@
 
 
 
-//query
-
-(function ($) {
-  $.fn.liHarmonica = function (params) {
-    var p = $.extend({
-      currentClass: 'cur', 
-      onlyOne: true, 
-    
-      speed: 500 
-    }, params);
-    return this.each(function () {
-      var
-      el = $(this).addClass('harmonica'),
-        linkItem = $('ul', el).prev('a');
-      el.children(':last').addClass('last');
-      $('ul', el).each(function () {
-        $(this).children(':last').addClass('last');
-      });
-      $('ul', el).prev('a').addClass('harFull');
-      el.find('.' + p.currentClass).parents('ul').show().prev('a').addClass(p.currentClass).addClass('harOpen');
-      linkItem.on('click', function () {
-        if ($(this).next('ul').is(':hidden')) {
-          $(this).addClass('harOpen');
-        } else {
-          $(this).removeClass('harOpen');
-        }
-        if (p.onlyOne) {
-          $(this).closest('ul').closest('ul').find('ul').not($(this).next('ul')).slideUp(p.speed).prev('a').removeClass('harOpen');
-          $(this).next('ul').slideToggle(p.speed);
-        } else {
-          $(this).next('ul').stop(true).slideToggle(p.speed);
-        }
-        return false;
-      });
-    });
-  };
-})(jQuery);
-
-
-$(function () {
-  $('.anyClass').liHarmonica({
-    onlyOne: false,
-    speed: 500
-  });
-  $('.anyClass2').liHarmonica({
-    onlyOne: true,
-    speed: 400
-  });
-});
 
 </script>
 	
